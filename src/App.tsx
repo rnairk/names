@@ -40,7 +40,7 @@ function App() {
     <NamesContext.Provider value={{ details, selected, updateSelected }}>
       <main className='flex flex-col w-screen h-screen'>
         <Header />
-        <div className='grow flex justify-around items-center'>
+        <div className='grow flex flex-col md:flex-row justify-around items-center'>
           <NamesList />
           <NamesDetail />
         </div>
