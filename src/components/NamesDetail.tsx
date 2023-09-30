@@ -10,7 +10,7 @@ const NamesDetail = () => {
         <header className='text-xl font-bold'>{namesContext?.selected.text}</header>
         <section>{namesContext?.selected.desc}</section>
         <div className='flex'>
-            {namesContext?.selected.hobby.map(h => <div className='rounded-xl text-center px-2 p-1 border-2 shadow-sm'>{h}</div>)}
+            {namesContext?.selected.hobby.map(h => <div key={h} className='rounded-xl text-center px-2 p-1 border-2 shadow-sm'>{h}</div>)}
             
         </div>
     </div>
